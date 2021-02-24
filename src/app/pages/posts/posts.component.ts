@@ -16,14 +16,12 @@ export class PostsComponent implements OnInit {
   ngOnInit(){
   // this.posteo= 
 this.mensajes=   this.dataService.getPost()
-console.log(this.mensajes);
-  
-  //  .subscribe
-  //   // console.log(this.posteo);
-  //   ((posts: any[]) =>{
-  //     console.log(posts);
-  //     this.mensajes=posts;
-  //   });
   }
+
+
+escuchaClick( id:number ){
+  console.log(id)
+}
+
 
 }
