@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { post } from 'jquery';
+
 
 import { DataService } from 'src/app/services/data.service';
 
@@ -13,15 +13,15 @@ export class PostsComponent implements OnInit {
   mensajes: any;
   constructor(private dataService: DataService) { }
 
-  ngOnInit(){
-  // this.posteo= 
-this.mensajes=   this.dataService.getPost()
+  ngOnInit() {
+    // this.posteo= 
+    this.mensajes = this.dataService.getPost()
   }
 
 
-escuchaClick( id:number ){
-  console.log(id)
-}
+  escuchaClick(id: number) {
+    console.log(id)
+  }
 
 
 }
